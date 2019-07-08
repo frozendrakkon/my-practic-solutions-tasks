@@ -29,15 +29,15 @@
      alert(production[key]);
     } */
 
-    // решение второе
+    /*решение второе
    function showNameProduct(name) {
-        name="Nike";
+        var name="Nike";
         console.log(name);
    }
-
+   /*
     showNameProduct();
 
-    // решение третье
+    /*  решение третье
     var production={
         name: "Nike",
         prise: 1000,
@@ -46,7 +46,18 @@
     for (production; ; ) {
         console.log(production)
         break
-    }
+    }*/
+
+    // решение четвертое
+    var production={
+        name: "Nike",
+        prise: 1000,
+        count: 3
+    };
+    var production=[name="Nike", prise=1000, count=3]
+    production.forEach(function(showProduct) {
+        console.log(showProduct)
+    });
 </script>
 </body>
 </html>
