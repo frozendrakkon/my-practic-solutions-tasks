@@ -5,54 +5,22 @@
             <meta charset="utf-8">
     </head>
 <body>
-<h1>Пробежаться по объекту и вывести его ключи</h1>
-
-<p>
-    Есть объект <code>{ name: 'Nike'; price: 1000; count: 3}</code>
-    <br />
-    Циклом вывести значение его ключей
-</p>
-<code>
-         console.log('Nike')
-         console.log('1000')
-         console.log('3')
-</code>
-
+<p>пробежаться по ключам объекта, и вывести их значения </p>
 <script>
-    /* решение первое
-    var production={
-        name: "Nike",
-        prise: 1000,
-        count: 3
-    };
-    for (var key in production) {
-     alert(production[key]);
-    } */
+   const cros={
+       name: "Nike",
+       prise: 1000,
+       count: 3
+   };
+   
+    
+   const arr = Object.keys(cros); // ["name", "prise", "count"]
 
-    /*решение второе
-   function showNameProduct(name) {
-        var name="Nike";
-        console.log(name);
-   }
-   /*
-    showNameProduct();
-
-    /*  решение третье
-    var production={
-        name: "Nike",
-        prise: 1000,
-        count: 3
-    };
-    for (production; ; ) {
-        console.log(production)
-        break
-    }*/
-
-    // решение четвертое
-    var production=[name="Nike", prise=1000, count=3]
-    production.forEach(function(showProduct) {
-        console.log(showProduct)
-    });
+   arr.forEach(function(propName, index) {
+       console.log(arr[index]);
+       console.log(cros[propName]);
+   });
+   
 </script>
 </body>
 </html>
