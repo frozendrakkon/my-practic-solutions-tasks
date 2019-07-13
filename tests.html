@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+    const family = {
+        dad: {
+            name: "Nikolay",
+            age: 46
+        },
+        mom: {
+            name: "Elvira",
+            age: 42
+        },
+        son1: {
+            name: "Roma",
+            age: 14
+        },
+        son2: {
+            name: "Sega",
+            age: 18
+        }
+    };
+
+    const arr = Object.keys(family);
+
+    arr.forEach(function(x, y) {
+        console.log(family[x]);
+        console.log(arr[y]);
+    });
+
+    function rename() {
+        console.log(arr);
+    };
+    rename()
+</script>
+</body>
+</html>
