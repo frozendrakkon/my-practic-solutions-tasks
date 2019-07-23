@@ -8,21 +8,32 @@ const romans = {
     M: 1000
 };
 function roman2arabic(num) {
-    // превратить строку в массив
-    // пробежать по массиву и проссумировать
-    // вернуть sum
-    // У тебя есть массив [и, и, и] тебе надо его превратить в [1, 1, 1]
+    let sum = 0;
 
-    const arr = num.split(""); // ["III"]
+    const arrayNumArabic = [];
+    const arr = num.split(""); //сделали массив
 
-    arr.forEach(function(romanValue) {
-        // ["I", "I" "I"]
-        romanValue = romans["I"]; // ["1", "1", "1"]
-        console.log(romanValue);
+    arr.forEach(function(romanNum) {
+        const arabicNum = romans[romanNum];
+        arrayNumArabic.push(arabicNum);
     });
-}
 
-console.log(roman2arabic("III") == 3);
+    const reverseArr = arrayNumArabic.slice().reverse();
+
+    reverseArr.forEach(function(currentArabicNum, index) {
+        const nextArabicNum = reverseArr[index + 1] || false;
+
+        // если есть следующее число,
+        if (nextArabicNum && currentArabicNum < nextArabicNum) {
+            sum = sum - currentArabicNum;
+        } else {
+            sum = sum + currentArabicNum;
+        }
+    });
+    console.log(sum);
+    return sum;
+}
+// console.log(roman2arabic("III"));
 
 // console.log(roman2arabic("V") === 5);
 
@@ -30,4 +41,4 @@ console.log(roman2arabic("III") == 3);
 
 // console.log(roman2arabic("MXM") === 1990);
 
-// console.log(roman2arabic("MXMIV") === 1994)
+console.log(roman2arabic("MXMIV") === 1994);
