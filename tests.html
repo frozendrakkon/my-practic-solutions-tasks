@@ -5,10 +5,30 @@
 
 </head>
 <body>
-<script>    
-   const one = "1"
-   const two = 2;
-   console.log( two - one)
+<script>   
+//    const person = {
+//            firstName: "Peter",
+//            lastName: "Smith"
+//    };
+//    const {firstName, lastName} = person;
+//    console.log(firstName, lastName);
+
+   const person = {
+        name: {
+        first: "Peter",
+        last: "Smith" 
+        },
+        age: 27,
+        role: "admin"
+   };
+        const {name: {first: firstName, last: lastName} } = person;
+        console.log(firstName, lastName)
+
+        const { role = "user"} = person;
+        console.log(role);
+        // значение по умолчанию( если нет role => то будет user)
+       
+        
 </script>
  
 </body>
