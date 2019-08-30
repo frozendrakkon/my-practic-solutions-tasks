@@ -9,7 +9,6 @@ const romans = {
 };
 function roman2arabic(num) {
     let sum = 0;
-
     const arrayNumArabic = [];
     const arr = num.split(""); //сделали массив
 
@@ -30,15 +29,11 @@ function roman2arabic(num) {
             sum = sum + currentArabicNum;
         }
     });
+
+    p = document.getElementById("sum");
+    p.innerHTML += sum;
+
     console.log(sum);
     return sum;
 }
-// console.log(roman2arabic("III"));
-
-// console.log(roman2arabic("V") === 5);
-
-// console.log(roman2arabic("IX") === 9);
-
-// console.log(roman2arabic("MXM") === 1990);
-
-console.log(roman2arabic("MXMIV") === 1994);
+console.log(roman2arabic("MCMXCIII"));

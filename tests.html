@@ -5,38 +5,11 @@
 
 </head>
 <body>
-    <p>число 1:<input type="text" id="n1"></p> 
-    <p>число 2:<input type="text" id="n2"></p>
-    <button onclick="plus()">сложить</button>
-    <button onclick="minus()">вычесть</button>
-    <hr>
-    <p id="out">результат</p>
-<script>
-    function plus() {
-        let num1, num2;
-        num1 = document.getElementById("n1").value;
-        num1 = parseInt(num1);
-
-        num2 = document.getElementById("n2").value;
-        num2 = parseInt(num2);
-
-        let result = num1 + num2;
-        document.getElementById('out').innerHTML = result;
-    };
-
-    function minus() {
-        let num1, num2;
-        num1 = document.getElementById("n1").value;
-        num1 = parseInt(num1);
-
-        num2 = document.getElementById("n2").value;
-        num2 = parseInt(num2);
-
-        let result = num1 - num2;
-        document.getElementById('out').innerHTML = result;
-    };
+<script>    
+   const one = "1"
+   const two = 2;
+   console.log( two - one)
 </script>
  
-    </script>
 </body>
 </html>
