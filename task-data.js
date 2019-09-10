@@ -8,9 +8,9 @@ const data = [
 ];
 let some = {};
 data.forEach(({ name, value }) => {
-    some = { ...data[(value, name)] };
+    some = { [name]: value };
+    console.log(some);
 });
-console.log(some);
 
 // const some  = {
 //     lastName: 'M',
