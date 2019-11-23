@@ -30,10 +30,7 @@ function roman2arabic(num) {
         }
     });
 
-    p = document.getElementById("sum");
-    p.innerHTML += sum;
-
-    console.log(sum);
     return sum;
 }
+
 console.log(roman2arabic("MCMXCIII"));

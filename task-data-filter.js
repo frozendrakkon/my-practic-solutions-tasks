@@ -6,6 +6,8 @@ const reformData = [
     { name: "email" },
     { name: "workRegion", value: "msk" }
 ];
+
 const fun = ({ value }) => value !== undefined;
 const reformDataResult = reformData.filter(fun);
+
 console.log(reformDataResult);

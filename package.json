@@ -1,0 +1,22 @@
+{
+  "name": "education",
+  "version": "1.0.0",
+  "description": "",
+  "main": "rename-later.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frozendrakkon/education.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/frozendrakkon/education/issues"
+  },
+  "homepage": "https://github.com/frozendrakkon/education#readme",
+  "dependencies": {
+    "preact": "^8.5.2"
+  }
+}
